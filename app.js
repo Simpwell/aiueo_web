@@ -1516,6 +1516,16 @@ function handleKanaMouseDown(event) {
         rowElement.appendChild(button);
         });
     });
+
+    // すべての img 要素に対してイベントハンドラを設定
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+    img.addEventListener('contextmenu', e => {
+        e.preventDefault();
+        // 必要に応じて、代替の処理を記述
+    });
+    });
+
     adjustButtonSize();
 
 }
