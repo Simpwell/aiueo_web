@@ -1551,8 +1551,8 @@ function adjustButtonSize() {
       // フォントサイズを調整
       let fontSize = buttonHeight * 0.8;
       if (kanaText.length > 1) {
-        if (fontSize > buttonWidth / 5){
-            fontSize = buttonWidth / 5
+        if (fontSize > buttonWidth / 2.5){
+            fontSize = buttonWidth / 2.5
         }
       }
       button.style.fontSize = fontSize + 'px';
