@@ -9,7 +9,8 @@ html, body {
     user-select: none;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE11 */  
-    touch-action: none;  
+    touch-action: none;
+    -webkit-touch-callout:none;  
   }
   
   #app-container {
