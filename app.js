@@ -1421,6 +1421,7 @@ function handleKanaMouseDown(event) {
   
   // 平仮名ボタンをタッチ開始したときの処理
   function handleKanaTouchStart(event) {
+    if (event.target.nodeName === '#text') return;
     touchStartTime = new Date().getTime();
     const button = event.currentTarget;
     button.classList.add('animate');
