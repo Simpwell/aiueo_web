@@ -1570,3 +1570,7 @@ function adjustButtonSize() {
   
   // アプリの初期化を実行
   initApp();
+
+  window.onload = function() {
+    document.getElementById("pop-up").checked = true;
+  }
