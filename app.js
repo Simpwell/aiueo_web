@@ -1540,7 +1540,7 @@ function adjustButtonSize() {
     const rowCount = kana.length;
     const columnCount = kana[0][0].length;
     const buttonWidth = Math.floor((containerWidth - (columnCount - 1) * 10) / columnCount);
-    const buttonHeight = Math.floor((containerHeight - (rowCount - 1) * 5) / rowCount);
+    const buttonHeight = Math.floor((containerHeight - (rowCount - 1) * 2) / rowCount);
   
     const buttons = document.getElementsByClassName('kana-btn');
     for (let i = 0; i < buttons.length; i++) {
