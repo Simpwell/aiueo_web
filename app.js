@@ -1590,6 +1590,6 @@ closeButton.addEventListener("click", function () {
   initApp();
 
   window.onload = function() {
-    modal.classList.toggle("closed");
-    modalOverlay.classList.toggle("closed");
-    }
+    modal.classList.remove("closed");
+    modalOverlay.classList.remove("closed");
+  }
